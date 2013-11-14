@@ -36,7 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/GameObject.o \
 	${OBJECTDIR}/Block.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/Vector3.o
 
 
 # C Compiler Flags
@@ -77,6 +78,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -I../glm/glm -I../OpenGL/freeglut-2.6.0/include -I../OpenGL/Src/GLTools/include -I../OpenGL/freeglut-2.6.0/include/GL -I../OpenGL/Src/GLTools/include/GL -I../OpenGL/Src/GLTools/src -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/Vector3.o: Vector3.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -I../glm/glm -I../OpenGL/freeglut-2.6.0/include -I../OpenGL/Src/GLTools/include -I../OpenGL/freeglut-2.6.0/include/GL -I../OpenGL/Src/GLTools/include/GL -I../OpenGL/Src/GLTools/src -MMD -MP -MF $@.d -o ${OBJECTDIR}/Vector3.o Vector3.cpp
 
 # Subprojects
 .build-subprojects:
