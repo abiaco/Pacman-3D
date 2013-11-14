@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Block.cpp</itemPath>
+      <itemPath>GameObject.cpp</itemPath>
+      <itemPath>GameObject.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>Block4.tga</itemPath>
+    <itemPath>Block5.tga</itemPath>
+    <itemPath>Block6.tga</itemPath>
+    <itemPath>floor.tga</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../glm/glm</pElem>
+            <pElem>../OpenGL/freeglut-2.6.0/include</pElem>
+            <pElem>../OpenGL/Src/GLTools/include</pElem>
+            <pElem>../OpenGL/freeglut-2.6.0/include/GL</pElem>
+            <pElem>../OpenGL/Src/GLTools/include/GL</pElem>
+            <pElem>../OpenGL/Src/GLTools/src</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>GLBatch.h</linkerLibLibItem>
+            <linkerLibLibItem>GLBatchBase.h</linkerLibLibItem>
+            <linkerLibLibItem>GLFrame.h</linkerLibLibItem>
+            <linkerLibLibItem>GLFrustum.h</linkerLibLibItem>
+            <linkerLibLibItem>GLGeometryTransform.h</linkerLibLibItem>
+            <linkerLibLibItem>GLMatrixStack.h</linkerLibLibItem>
+            <linkerLibLibItem>GLShaderManager.h</linkerLibLibItem>
+            <linkerLibLibItem>GLTools.h</linkerLibLibItem>
+            <linkerLibLibItem>GLTriangleBatch.h</linkerLibLibItem>
+            <linkerLibLibItem>StopWatch.h</linkerLibLibItem>
+            <linkerLibLibItem>math3d.h</linkerLibLibItem>
+            <linkerLibLibItem>glew.h</linkerLibLibItem>
+            <linkerLibLibItem>glxew.h</linkerLibLibItem>
+            <linkerLibLibItem>wglew.h</linkerLibLibItem>
+            <linkerLibLibItem>freeglut.h</linkerLibLibItem>
+            <linkerLibLibItem>freeglut_ext.h</linkerLibLibItem>
+            <linkerLibLibItem>freeglut_std.h</linkerLibLibItem>
+            <linkerLibLibItem>glut.h</linkerLibLibItem>
+            <linkerOptionItem>-dynamic</linkerOptionItem>
+            <linkerOptionItem>-static</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
